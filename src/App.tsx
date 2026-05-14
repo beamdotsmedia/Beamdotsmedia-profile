@@ -35,15 +35,15 @@ const useCustomImage = (defaultSrc: string, storageKey: string) => {
 };
 
 const IMAGES = {
-  logo: "https://lh3.googleusercontent.com/aida/ADBb0uhtbCTmFnBIK-wjsaYH3cdlyD5l_5_CWIqiXg0DvFu5cKI85m9s0s2fS6NzqWM_3wBTT5vHVHRqRxYlmEHYO9bSL_NaCMbE2qS1iptZNUNU7ZJnGYW51FYgWYlwHvpCsDmypFqDrQ0jxg05HosbxHQysX-rzu0inJ2j-Eic6d0Zoj_ujZUXxZo5MPYiF5seQ5CbSU148DdSYRrZ_JLNJMzNmFQBytn4TNRwpKb__c1xYB0AZCUUWc5_tURNm9vGgBjEapwI26W1jg",
+  logo: "https://i.ibb.co/FLzsL2np/320766221-728650771710428-9026308118916085344-n.jpg",
   heroPlaceholder: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
   hero: "https://i.ibb.co/dYnP96q/photo-2026-04-27-14-14-07.jpg",
-  tekni: "https://lh3.googleusercontent.com/aida/ADBb0uipPOHBlEEB45N8E-9exS6YFYgXN6EgFux_8cmuc4RkMSLCBEXDcI9z0lvG_3A1OnEm9rPun5uk3cVfocOnfMl8nn3PWYtrJBo3rU52T3Q07tIzaqw0pTnMNEhyXVYt3QRLRSg6jx5ldfsSn38YQkWT1gqcGfrXtcxI2kpuwfqWm0WXrJTubluc_iigBoS8DfjyFO4pxjOMCKIn1XdyvxuFB_58yRVMnLvPozEvKgO28TDseVV8Wf6Ktb2qJtxS32CK0Jfs1fn2mg",
-  okiss: "https://lh3.googleusercontent.com/aida/ADBb0uhLar02wEbW2g1BTjzzhHKIYVcXCqlBBrL0TqALQDuolCoT5nor0HlS_KVX_TLpYP6upydbjNCM4QwikP5PuTsNyJLL-HoPPciunf31ATFcPBwMva1457yUDdsum0L3xKHvD5lsKjiqj0-h_ghrG2cMkj_Sk78Qej1PQkc3cXK9-fYNU6-oWMTHgEVFWURZbDrIL36F2pBoxVmtQ6apiFWwlqFpqNemeYXuCTr8FudAFcfp4ZeuqDFy5NcT8XJwir_4cegmqybzFA",
-  verthys: "https://lh3.googleusercontent.com/aida/ADBb0ugQeQMUt2uNH1geuAZYIIEU_GEaMKBim9I4BZRxPI76jdtEzia4-6nLOEXbtFoY2wvTATZWpCR9lF7MvG4AfeJzk9H95KXnzLpcunDZZTAlkqyiePJMXVG4sVu_azXrRYFHM3oyq58_2iO7ynJWYCECkcd1Cw4YVW-RxVJcU-PIUvHGMrL9gGboCVEMZD2FQEzmqeU-iObS3DoRPgnVsFIAY8kxiMDHZCkeGsoDdh58dPbzcFtIurvbwDunV-af6L1UvfHigCi9",
-  meso: "https://lh3.googleusercontent.com/aida/ADBb0uiorQDNFIj00LDGCXRvOGdj2eceZmeSW6JsV3UBSn-5RHoVeHV7OEi35xsYjoPItag6Ig2F6iO2AlURnLIHVQtl2O0HypgW7wCGgbC1S0sS3Bl-mDwNr5P8pn-ToVNp5XyD7qF_ckTJ8FGeDKAyeemNuECeCwLjwSDoqN6zs3PeRmMkBI3Pb3lXN76DRMBXRQVFKS_0eFqvqXLa2SE0vq2n8CAPcO0qWf776zRVLguFLfcLZpF1ui8CSDgAZ4voddmZEnwWV9nX",
-  chillins: "https://lh3.googleusercontent.com/aida/ADBb0ujpmX40N5lZUVDyqIjiHOZ7KxfWrk1dhfis4kvG4ZTWQUd6b-Syum3KOWH4yGFc9-9FIZ3HzCluye5xsE4PMVPGtDJ4-sq9OsIHUyl7LLCCHzwCvKWJu0yN2t8La5c705dDhz0ON4lwhicfOQM3kCZJ2_OMrAGRTyTvESLc9bh_f2t1GLtkIwn9L4Z368aI80TJZdVkBAjSJcl0vcvT1fd-CLBrInFmMBZ2TfMnf4bnmYArr2LmAyOJIKbmkmiBSzGHFnFFkz0Sog",
-  quarter: "https://lh3.googleusercontent.com/aida/ADBb0uj_vZbwMOuovFMdHQpifF7zFTRdmhYeTFLg3_6GT7qdxyax62s_khSJpm_6PCCoImINco6nmoTgw1Be3L0ckHMrNora_0lsC53n0pOMdKmrMxPo5EX-RyvaOlBPxc_IPCYsx0rXXtSQ_yAxpgdoZTnIaLnvQ6vcFChv4CsyNZunICfdCf2fM6jU6WQTVc_WwGdgCFXA8arBUr9-h3zh_Ym0KFRLLFVHoglsYf2elxyMzdigtKqa_bvlunEtcj1Ga23LWDj-6cOkug",
+  tekni: "https://i.ibb.co/Xr14DJks/580064635-1424013836197977-7623631017303713109-n.jpg",
+  okiss: "https://i.ibb.co/qMrRQKyK/Whats-App-Image-2025-12-30-at-1-11-22-PM-2.jpg",
+  verthys: "https://i.ibb.co/DH76QjdM/604775790-1459475052854520-5098154154281447776-n.jpg",
+  meso: "https://i.ibb.co/XfQchVt5/306003682-503543378443208-4796288452609544506-n.jpg",
+  chillins: "https://i.ibb.co/W4q5ngWJ/610158509-17995311644895139-6768524612315951932-n.jpg",
+  quarter: "https://i.ibb.co/Ly7qFxG/474450382-1152638999816560-5165372077689320324-n.jpg",
   contactBg: "https://lh3.googleusercontent.com/aida/ADBb0uj00HYyDj0bcguvC07v_kvxjxKPRuELWP9PnXFtgWTTjjKvcVQDS035TZ8UqSwvcmkn55QTJk_5SKbnmNNQV9Rw-Do7jFt5xPDogjhCyjNr2bBVABs5UFPW4wAhCQDxtdmCsStKmg7838ja6XCRB76zRADbOPQMOOPmD0IezRuKvuqXTpXbtDMEB5pwq_3Ck8x06Pnx83cfb_oJdv0ul77XXn0QbtOAbb4Yo8o4qlpPGhhr-Z_U-IBbKT0WlQOWuZ8jxgdd4J47cw",
   step1: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
   step2: "https://images.unsplash.com/photo-1543269664-76bc3997d9ea?q=80&w=2070&auto=format&fit=crop",
