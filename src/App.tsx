@@ -37,7 +37,7 @@ const useCustomImage = (defaultSrc: string, storageKey: string) => {
 const IMAGES = {
   logo: "https://lh3.googleusercontent.com/aida/ADBb0uhtbCTmFnBIK-wjsaYH3cdlyD5l_5_CWIqiXg0DvFu5cKI85m9s0s2fS6NzqWM_3wBTT5vHVHRqRxYlmEHYO9bSL_NaCMbE2qS1iptZNUNU7ZJnGYW51FYgWYlwHvpCsDmypFqDrQ0jxg05HosbxHQysX-rzu0inJ2j-Eic6d0Zoj_ujZUXxZo5MPYiF5seQ5CbSU148DdSYRrZ_JLNJMzNmFQBytn4TNRwpKb__c1xYB0AZCUUWc5_tURNm9vGgBjEapwI26W1jg",
   heroPlaceholder: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
-  hero: "https://ibb.co/hzpB5Hj",
+  hero: "https://i.ibb.co/dYnP96q/photo-2026-04-27-14-14-07.jpg",
   tekni: "https://lh3.googleusercontent.com/aida/ADBb0uipPOHBlEEB45N8E-9exS6YFYgXN6EgFux_8cmuc4RkMSLCBEXDcI9z0lvG_3A1OnEm9rPun5uk3cVfocOnfMl8nn3PWYtrJBo3rU52T3Q07tIzaqw0pTnMNEhyXVYt3QRLRSg6jx5ldfsSn38YQkWT1gqcGfrXtcxI2kpuwfqWm0WXrJTubluc_iigBoS8DfjyFO4pxjOMCKIn1XdyvxuFB_58yRVMnLvPozEvKgO28TDseVV8Wf6Ktb2qJtxS32CK0Jfs1fn2mg",
   okiss: "https://lh3.googleusercontent.com/aida/ADBb0uhLar02wEbW2g1BTjzzhHKIYVcXCqlBBrL0TqALQDuolCoT5nor0HlS_KVX_TLpYP6upydbjNCM4QwikP5PuTsNyJLL-HoPPciunf31ATFcPBwMva1457yUDdsum0L3xKHvD5lsKjiqj0-h_ghrG2cMkj_Sk78Qej1PQkc3cXK9-fYNU6-oWMTHgEVFWURZbDrIL36F2pBoxVmtQ6apiFWwlqFpqNemeYXuCTr8FudAFcfp4ZeuqDFy5NcT8XJwir_4cegmqybzFA",
   verthys: "https://lh3.googleusercontent.com/aida/ADBb0ugQeQMUt2uNH1geuAZYIIEU_GEaMKBim9I4BZRxPI76jdtEzia4-6nLOEXbtFoY2wvTATZWpCR9lF7MvG4AfeJzk9H95KXnzLpcunDZZTAlkqyiePJMXVG4sVu_azXrRYFHM3oyq58_2iO7ynJWYCECkcd1Cw4YVW-RxVJcU-PIUvHGMrL9gGboCVEMZD2FQEzmqeU-iObS3DoRPgnVsFIAY8kxiMDHZCkeGsoDdh58dPbzcFtIurvbwDunV-af6L1UvfHigCi9",
