@@ -398,10 +398,10 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Tekni Furniture",
-      desc: "Scaling luxury brand digital presence through multi-channel funnel optimization. 300% Walk-in Sales Return.",
+      desc: "Scaling luxury brand digital presence through Google & Meta Ads. 300% Walk-in Increased .",
       tag: "Premium Furniture",
       metric: "300%",
-      metricLabel: "Walk-in Return",
+      metricLabel: "Walk-in Increased",
       img: IMAGES.tekni
     },
     {
