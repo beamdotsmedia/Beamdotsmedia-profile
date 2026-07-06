@@ -6,3 +6,8 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# SEO data output
+data/
+
+__pycache__/
