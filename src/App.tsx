@@ -35,7 +35,7 @@ const useCustomImage = (defaultSrc: string, storageKey: string) => {
 };
 
 const IMAGES = {
-  logo: "https://i.ibb.co/FLzsL2np/320766221-728650771710428-9026308118916085344-n.jpg",
+  logo: "/logo.jpg",
   heroPlaceholder: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
   hero: "https://i.ibb.co/dYnP96q/photo-2026-04-27-14-14-07.jpg",
   tekni: "https://i.ibb.co/Xr14DJks/580064635-1424013836197977-7623631017303713109-n.jpg",
@@ -69,7 +69,7 @@ const Header = () => {
           className="flex-shrink-0 group relative cursor-pointer" 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <img src={logoSrc} alt="BeamDots Logo" className="h-10 w-auto object-contain brightness-110 transition-transform hover:scale-105 active:scale-95" />
+          <img src={logoSrc} alt="BeamDots Media - Performance Marketing Agency Petaling Jaya" className="h-10 w-auto object-contain brightness-110 transition-transform hover:scale-105 active:scale-95" />
         </div>
         <div className="hidden md:flex items-center gap-10">
           <ul className="flex gap-8 font-sans uppercase tracking-[0.1em] font-bold text-xs text-on-surface-variant">
@@ -109,14 +109,14 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-surface/40 to-transparent z-10"></div>
         <img 
           src={src} 
-          alt="Strategist Portrait" 
+          alt="BeamDots Media growth marketing strategist in Petaling Jaya"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             if (target.src !== IMAGES.heroPlaceholder) {
               setSrc(IMAGES.heroPlaceholder);
             }
           }}
-          className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-1000" 
+          className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-1000"
         />
       </div>
 
@@ -133,13 +133,17 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
+          <div className="text-primary font-black uppercase tracking-[0.3em] text-[0.65rem] mb-6 text-center lg:text-left">
+            Performance Marketing Agency · Petaling Jaya, Malaysia
+          </div>
+
           <h1 className="text-4xl md:text-6xl lg:text-[4.25rem] font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            Your Business Doesn't Need More Traffic — 
+            Your Business Doesn't Need More Traffic —
             <span className="gold-gradient italic block mt-2 py-1">It Needs More Sales.</span>
           </h1>
-          
+
           <p className="text-base md:text-xl text-on-surface-variant max-w-xl lg:max-w-none mx-auto lg:mx-0 leading-relaxed mb-10">
-            Helping SMEs generate consistent leads and sales with data-driven performance marketing. Focused on results, not impressions.
+            BeamDots Media is a performance marketing agency based in Petaling Jaya, Selangor, helping Malaysian SMEs generate consistent leads and sales through data-driven Facebook, Instagram &amp; Google Ads. Focused on results, not impressions.
           </p>
 
           <HeroImage className="lg:hidden mb-12 relative max-w-sm mx-auto" />
@@ -226,9 +230,10 @@ const ProblemSection = () => {
                whileInView={{ opacity: 1, scale: 1 }}
                viewport={{ once: true }}
             >
-              <img 
-                src={IMAGES.burningMoney} 
-                alt="Wasting marketing budget" 
+              <img
+                src={IMAGES.burningMoney}
+                alt="Wasted ad spend from ineffective Facebook and Google Ads campaigns"
+                loading="lazy"
                 className="w-full aspect-video object-cover rounded-xl contrast-110 group-hover:scale-105 transition-all duration-1000"
               />
             </motion.div>
@@ -364,10 +369,11 @@ const ProjectCard: React.FC<{ project: any, index: number }> = ({ project, index
         className="relative aspect-video rounded-xl md:rounded-2xl overflow-hidden mb-8 bg-surface-container-highest shadow-2xl border border-white/5"
       >
         <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60 z-10"></div>
-        <img 
-          src={src} 
-          alt={project.title} 
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-70 group-hover:opacity-100 grayscale-[40%] group-hover:grayscale-0" 
+        <img
+          src={src}
+          alt={`${project.title} - ${project.tag} case study by BeamDots Media`}
+          loading="lazy"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-70 group-hover:opacity-100 grayscale-[40%] group-hover:grayscale-0"
         />
         <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 z-10">
           <span className="px-3 py-1 md:px-4 md:py-1.5 bg-primary text-surface text-[0.55rem] md:text-[0.65rem] font-black uppercase tracking-[0.15em] rounded-full shadow-lg">
@@ -511,15 +517,16 @@ const AboutFounder = () => {
               className="max-w-md mx-auto aspect-square rounded-2xl overflow-hidden glass-card p-4 gold-glow group relative"
             >
               <img 
-                src={src} 
-                alt="Growth Strategist" 
+                src={src}
+                alt="Founder of BeamDots Media, growth marketing agency in Petaling Jaya"
+                loading="lazy"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   if (target.src !== IMAGES.heroPlaceholder) {
                     setSrc(IMAGES.heroPlaceholder);
                   }
                 }}
-                className="w-full h-full object-cover rounded-xl filter brightness-110 contrast-110" 
+                className="w-full h-full object-cover rounded-xl filter brightness-110 contrast-110"
               />
             </div>
             {/* Design Accents */}
@@ -600,10 +607,11 @@ const SuccessPlan = () => {
             >
               {/* Image Container */}
               <div className="relative aspect-video lg:aspect-[16/10] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
-                <img 
-                  src={s.img} 
-                  alt={s.title} 
-                  className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 opacity-40 group-hover:opacity-80" 
+                <img
+                  src={s.img}
+                  alt={`Step ${s.number}: ${s.title} - BeamDots Media growth marketing process`}
+                  loading="lazy"
+                  className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 opacity-40 group-hover:opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
                 <div className="absolute top-4 left-4 md:top-6 md:left-6 flex justify-between items-center w-[calc(100%-2rem)] md:w-[calc(100%-3rem)]">
@@ -638,10 +646,12 @@ const Contact = () => {
     <section className="section-padding px-6 md:px-8 relative overflow-hidden bg-surface scroll-mt-20" id="contact">
       {/* Background Decor */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={IMAGES.contactBg} 
-          alt="Abstract Background" 
-          className="w-full h-full object-cover opacity-10 grayscale brightness-50 mix-blend-overlay" 
+        <img
+          src={IMAGES.contactBg}
+          alt=""
+          role="presentation"
+          loading="lazy"
+          className="w-full h-full object-cover opacity-10 grayscale brightness-50 mix-blend-overlay"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-surface via-surface/80 to-surface"></div>
       </div>
