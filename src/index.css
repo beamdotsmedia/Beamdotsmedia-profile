@@ -29,7 +29,7 @@
   }
   
   .gold-gradient {
-    @apply bg-gradient-to-r from-primary-container to-primary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-container to-primary bg-clip-text text-transparent pr-[0.1em] -mr-[0.1em] box-decoration-clone;
   }
   
   .gold-bg-gradient {

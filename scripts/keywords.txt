@@ -1,15 +1,49 @@
 # Target keywords for beamdotsmedia.com
 # One keyword per line. Lines starting with # are ignored.
 
+# Brand & general
 beamdots media
-performance marketing agency malaysia
-facebook ads agency malaysia
-google ads agency malaysia
-meta ads agency malaysia
 growth marketing agency malaysia
 digital marketing agency malaysia
 digital marketing agency kl
 digital marketing agency petaling jaya
 ecommerce marketing agency malaysia
 sme marketing agency malaysia
+
+# Content Planning
+content planning agency malaysia
+content marketing agency malaysia
+
+# Video Production & Shooting
+video production agency malaysia
+video shooting service malaysia
+content video production malaysia
+
+# Social Media Management
+social media management agency malaysia
+social media agency malaysia
+instagram management agency malaysia
+
+# Meta Ads Management
+facebook ads agency malaysia
+meta ads agency malaysia
+instagram ads agency malaysia
+
+# Google Ads Management
+google ads agency malaysia
 ppc agency malaysia
+
+# XHS Influencer Marketing
+xhs influencer marketing malaysia
+xiaohongshu marketing agency malaysia
+rednote influencer marketing malaysia
+
+# Website Creation
+website design agency malaysia
+website development agency malaysia
+landing page design agency malaysia
+
+# Sales Funnel Optimization
+sales funnel optimization malaysia
+conversion rate optimization agency malaysia
+landing page optimization malaysia
