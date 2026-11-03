@@ -1,10 +1,13 @@
-import { Link } from 'react-router';
+import Link from './LocaleLink';
+
+import { localePath, useLocale } from '../i18n';
 
 export type BreadcrumbItem = { label: string; to?: string };
 
 const SITE_URL = 'https://beamdotsmedia.com';
 
 const Breadcrumbs = ({ items }: { items: BreadcrumbItem[] }) => {
+  const locale = useLocale();
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -12,7 +15,7 @@ const Breadcrumbs = ({ items }: { items: BreadcrumbItem[] }) => {
       "@type": "ListItem",
       "position": i + 1,
       "name": item.label,
-      ...(item.to ? { "item": `${SITE_URL}${item.to}` } : {}),
+      ...(item.to ? { "item": `${SITE_URL}${localePath(item.to, locale)}` } : {}),
     })),
   };
 

@@ -18,6 +18,23 @@ import FunnelOptimizationPage from './pages/FunnelOptimizationPage';
 import CaseStudiesPage from './pages/CaseStudiesPage';
 import AboutPage from './pages/AboutPage';
 import ServiceAreasPage from './pages/ServiceAreasPage';
+import { ROUTE_META } from './data/seo';
+import { HTML_LANG, LOCALES, localePath, stripLocale, useLocale } from './i18n';
+
+const PAGES = [
+  { path: '/', element: <HomePage /> },
+  { path: '/services/content-planning', element: <ContentPlanningPage /> },
+  { path: '/services/video-production', element: <VideoProductionPage /> },
+  { path: '/services/social-media-management', element: <SocialMediaManagementPage /> },
+  { path: '/services/facebook-instagram-ads', element: <FacebookAdsPage /> },
+  { path: '/services/google-ads', element: <GoogleAdsPage /> },
+  { path: '/services/xhs-influencer-marketing', element: <XhsInfluencerPage /> },
+  { path: '/services/website-creation', element: <WebsiteCreationPage /> },
+  { path: '/services/funnel-optimization', element: <FunnelOptimizationPage /> },
+  { path: '/case-studies', element: <CaseStudiesPage /> },
+  { path: '/about', element: <AboutPage /> },
+  { path: '/service-areas', element: <ServiceAreasPage /> },
+];
 
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
@@ -34,24 +51,31 @@ const ScrollToTop = () => {
   return null;
 };
 
+const DocumentMeta = () => {
+  const { pathname } = useLocation();
+  const locale = useLocale();
+  useEffect(() => {
+    document.documentElement.lang = HTML_LANG[locale];
+    const meta = ROUTE_META[locale][stripLocale(pathname)];
+    if (!meta) return;
+    document.title = meta.title;
+    document.querySelector('meta[name="description"]')?.setAttribute('content', meta.description);
+  }, [pathname, locale]);
+  return null;
+};
+
 export default function App() {
   return (
     <>
       <ScrollToTop />
+      <DocumentMeta />
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/services/content-planning" element={<ContentPlanningPage />} />
-          <Route path="/services/video-production" element={<VideoProductionPage />} />
-          <Route path="/services/social-media-management" element={<SocialMediaManagementPage />} />
-          <Route path="/services/facebook-instagram-ads" element={<FacebookAdsPage />} />
-          <Route path="/services/google-ads" element={<GoogleAdsPage />} />
-          <Route path="/services/xhs-influencer-marketing" element={<XhsInfluencerPage />} />
-          <Route path="/services/website-creation" element={<WebsiteCreationPage />} />
-          <Route path="/services/funnel-optimization" element={<FunnelOptimizationPage />} />
-          <Route path="/case-studies" element={<CaseStudiesPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/service-areas" element={<ServiceAreasPage />} />
+          {LOCALES.flatMap((locale) =>
+            PAGES.map(({ path, element }) => (
+              <Route key={localePath(path, locale)} path={localePath(path, locale)} element={element} />
+            )),
+          )}
         </Route>
       </Routes>
     </>

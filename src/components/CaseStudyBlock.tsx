@@ -1,7 +1,9 @@
 import { motion } from 'motion/react';
 import type { Project } from '../data/projects';
+import { useT } from '../i18n';
 
 const CaseStudyBlock = ({ project, narrative }: { project: Project; narrative: string }) => {
+  const t = useT();
   return (
     <motion.div
       className="grid md:grid-cols-2 gap-10 items-center glass-card p-6 md:p-10 rounded-2xl border border-white/5"
@@ -12,7 +14,7 @@ const CaseStudyBlock = ({ project, narrative }: { project: Project; narrative: s
       <div className="relative aspect-video rounded-xl overflow-hidden bg-surface-container-highest">
         <img
           src={project.img}
-          alt={`${project.title} - ${project.tag} case study by BeamDots Media`}
+          alt={t(`${project.title} - ${project.tag} case study by BeamDots Media`, `${project.title} - BeamDots Media ${project.tag}案例`)}
           loading="lazy"
           className="w-full h-full object-cover opacity-80 grayscale-[30%]"
         />

@@ -1,22 +1,25 @@
 import { ProjectCard } from '../components/HomeSections';
-import { projects } from '../data/projects';
+import { useProjects } from '../data/projects';
 import PageCta from '../components/PageCta';
 import Breadcrumbs from '../components/Breadcrumbs';
+import { useT } from '../i18n';
 
 const CaseStudiesPage = () => {
+  const t = useT();
+  const projects = useProjects();
   return (
     <>
-      <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Case Studies" }]} />
+      <Breadcrumbs items={[{ label: t("Home", "首页"), to: "/" }, { label: t("Case Studies", "客户案例") }]} />
       <section className="pb-16 md:pb-20 px-6 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="text-primary font-black uppercase tracking-[0.3em] text-[0.65rem] mb-6">
-            Case Studies
+            {t("Case Studies", "客户案例")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            Real Results for <span className="gold-gradient italic">Malaysian Businesses</span>
+            {t(<>Real Results for <span className="gold-gradient italic">Malaysian Businesses</span></>, <><span className="gold-gradient italic">马来西亚企业</span>的真实案例</>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-            Every project below is a client we've actually worked with — real budgets, documented outcomes, across beauty and aesthetics, F&amp;B e-commerce, furniture, and interior design.
+            {t("Every project below is a client we've actually worked with — real budgets, documented outcomes, across beauty and aesthetics, F&B e-commerce, furniture, and interior design.", "下面每个案例都是我们真实合作过的客户，预算是真的，成绩也有记录，涵盖美容医美、食品电商、家具和室内设计。")}
           </p>
         </div>
       </section>
@@ -32,8 +35,8 @@ const CaseStudiesPage = () => {
       </section>
 
       <PageCta
-        heading="Want Results Like These?"
-        description="Book a free consultation and I'll personally look at your business and tell you what's realistic for your budget."
+        heading={t("Want Results Like These?", "也想要这样的成果吗？")}
+        description={t("Book a free consultation and I'll personally look at your business and tell you what's realistic for your budget.", "预约免费咨询，我亲自了解你的生意，老实告诉你这个预算能做到什么。")}
       />
     </>
   );

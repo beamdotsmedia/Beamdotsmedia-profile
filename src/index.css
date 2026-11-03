@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..900;1,300..900&family=Outfit:ital,wght@0,600..900;1,600..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..900;1,300..900&family=Outfit:ital,wght@0,600..900;1,600..900&family=Noto+Sans+SC:wght@300..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-heading: "Outfit", "Inter", sans-serif;
+  --font-sans: "Inter", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Outfit", "Inter", "Noto Sans SC", sans-serif;
   
   --color-surface: #111318;
   --color-surface-container: #1e2024;
@@ -52,4 +52,40 @@
 
 .animate-bounce-slow {
   animation: bounce-slow 3s infinite;
+}
+
+/* Chinese has no true italics or capitals, and its dense strokes clog at tiny sizes and heavy weights */
+html[lang^="zh"] .italic {
+  font-style: normal;
+}
+
+html[lang^="zh"] .uppercase {
+  text-transform: none;
+}
+
+html[lang^="zh"] :is(h1, h2, h3) {
+  line-height: 1.35;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+html[lang^="zh"] :is(h1, h2) {
+  font-weight: 800;
+}
+
+html[lang^="zh"] h2.flex {
+  column-gap: 0;
+}
+
+html[lang^="zh"] h3 {
+  font-weight: 700;
+}
+
+html[lang^="zh"] :is([class*="text-[0."], .text-xs) {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+html[lang^="zh"] :is([class*="tracking-["], .tracking-widest) {
+  letter-spacing: 0.08em;
 }
