@@ -24,7 +24,7 @@ const WebsiteCreationPage = () => {
             {t("Service · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Website Creation <span className="gold-gradient italic">& Design</span></>, <>网站设计<span className="gold-gradient italic">与制作</span></>)}
+            {t(<>Website Design <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">网站设计与制作</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             {t("A slow, outdated, or confusing website is where a lot of ad spend quietly dies. We build fast, mobile-first websites and landing pages designed to convert the traffic your ads, content, and social channels already send you — not just look good in a portfolio.", "很多广告费，就浪费在又慢、又旧、又看不懂的网站上。我们提供网站设计和网页制作，做出打开快、手机好用的网站和 Landing Page，目的是把广告、内容和社交平台带来的流量变成客户，不只是好看。")}
@@ -34,7 +34,7 @@ const WebsiteCreationPage = () => {
 
       <section className="section-padding px-6 md:px-8 border-t border-outline-variant/10 bg-surface-container/20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-black mb-4 text-center">{t("What's Included", "服务内容")}</h2>
+          <h2 className="text-2xl md:text-3xl font-heading font-black mb-4 text-center">{t("What's Included in Our Website Design", "网站设计与制作包括什么")}</h2>
           <p className="text-on-surface-variant text-sm md:text-base text-center max-w-2xl mx-auto mb-10 font-medium">
             {t("Every engagement is scoped to your business and goals — here's what a typical website build covers:", "每个项目都会按你的生意和目标来安排，一般包括：")}
           </p>
@@ -74,7 +74,7 @@ const WebsiteCreationPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <h2 className="text-2xl md:text-3xl font-heading font-black mb-6">{t("Where It Feeds Into", "可以搭配哪些服务")}</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-black mb-6">{t("How Website Design Supports Your Other Marketing", "网站设计与制作如何配合其他服务")}</h2>
             <p className="text-on-surface-variant leading-relaxed font-medium">
               {t(<>A new or rebuilt site pairs directly with our{' '}
               <Link to="/services/funnel-optimization" className="text-primary font-bold hover:underline">Sales Funnel Optimization</Link>{' '}

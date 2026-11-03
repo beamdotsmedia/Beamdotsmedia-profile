@@ -16,7 +16,7 @@ const CaseStudiesPage = () => {
             {t("Case Studies", "客户案例")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Real Results for <span className="gold-gradient italic">Malaysian Businesses</span></>, <><span className="gold-gradient italic">马来西亚企业</span>的真实案例</>)}
+            {t(<>Marketing Case Studies: <span className="gold-gradient italic">Real Results for Malaysian Businesses</span></>, <>马来西亚数码营销<span className="gold-gradient italic">客户案例</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             {t("Every project below is a client we've actually worked with — real budgets, documented outcomes, across beauty and aesthetics, F&B e-commerce, furniture, and interior design.", "下面每个案例都是我们真实合作过的客户，预算是真的，成绩也有记录，涵盖美容医美、食品电商、家具和室内设计。")}
@@ -26,6 +26,9 @@ const CaseStudiesPage = () => {
 
       <section className="section-padding bg-surface-container-low px-6 md:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-heading font-black tracking-tight text-center mb-16 md:mb-20">
+            {t("Results Across Beauty, F&B, Furniture & Interior Design", "美容、食品、家具与室内设计案例")}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 md:gap-y-20">
             {projects.map((p, i) => (
               <ProjectCard key={i} project={p} index={i} />

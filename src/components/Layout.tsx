@@ -4,11 +4,13 @@ import Footer from './Footer';
 
 const Layout = () => {
   return (
-    <main className="font-sans selection:bg-primary/20">
+    <div className="font-sans selection:bg-primary/20">
       <Header />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 };
 

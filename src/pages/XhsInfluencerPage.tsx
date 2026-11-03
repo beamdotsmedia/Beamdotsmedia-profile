@@ -24,7 +24,7 @@ const XhsInfluencerPage = () => {
             {t("Service · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>XHS Influencer <span className="gold-gradient italic">Marketing</span></>, <>小红书网红<span className="gold-gradient italic">营销</span></>)}
+            {t(<>XHS Influencer Marketing <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">小红书营销</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             {t("Xiaohongshu (小红书, XHS), internationally branded as RedNote, has become one of the fastest-growing platforms for reaching Malaysia's Chinese-speaking, beauty, lifestyle, and F&B audiences — but most brands don't know how to work it. We plan and manage XHS influencer and KOC campaigns that turn genuine recommendations into real bookings and sales.", "小红书（RedNote）已成为接触马来西亚华人，以及美容、生活和餐饮消费者增长最快的平台之一，但很多品牌还不知道怎么做。我们帮你做小红书营销，策划和管理网红与 KOC 合作，让真实推荐带来实际的预约和生意。")}
@@ -34,7 +34,7 @@ const XhsInfluencerPage = () => {
 
       <section className="section-padding px-6 md:px-8 border-t border-outline-variant/10 bg-surface-container/20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-black mb-4 text-center">{t("What's Included", "服务内容")}</h2>
+          <h2 className="text-2xl md:text-3xl font-heading font-black mb-4 text-center">{t("What's Included in Our XHS Influencer Marketing", "小红书营销包括什么")}</h2>
           <p className="text-on-surface-variant text-sm md:text-base text-center max-w-2xl mx-auto mb-10 font-medium">
             {t("Every engagement is scoped to your business and goals — here's what a typical XHS influencer campaign covers:", "每个项目都会按你的生意和目标来安排，一般包括：")}
           </p>
@@ -75,7 +75,7 @@ const XhsInfluencerPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <h2 className="text-2xl md:text-3xl font-heading font-black mb-6">{t("Where It Feeds Into", "可以搭配哪些服务")}</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-black mb-6">{t("How XHS Influencer Marketing Supports Your Other Marketing", "小红书营销如何配合其他服务")}</h2>
             <p className="text-on-surface-variant leading-relaxed font-medium">
               {t(<>KOC content and briefs draw from the same{' '}
               <Link to="/services/content-planning" className="text-primary font-bold hover:underline">Content Plan</Link>{' '}

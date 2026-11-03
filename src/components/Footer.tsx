@@ -38,16 +38,14 @@ const Footer = () => {
             </ul>
           </nav>
           <div className="flex gap-6">
-            <a
-              href="#"
+            <button
+              type="button"
+              aria-label={t("Back to top", "回到顶部")}
               className="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary hover:scale-110 transition-all cursor-pointer"
-              onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               <ChevronUp className="w-5 h-5" />
-            </a>
+            </button>
           </div>
         </div>
       </div>

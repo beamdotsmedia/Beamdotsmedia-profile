@@ -29,7 +29,7 @@ const FacebookAdsPage = () => {
             {t("Service · Facebook & Instagram Ads · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Meta Ads Management <span className="gold-gradient italic">(Sales Focused)</span></>, <>Facebook 与 Instagram <span className="inline-block">广告代投</span><span className="gold-gradient italic">（只看销售成绩）</span></>)}
+            {t(<>Facebook &amp; Instagram Ads Management <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚 Facebook 与 Instagram <span className="gold-gradient italic inline-block">广告代投</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             {t("If your Facebook and Instagram Ads are burning budget on likes and reach instead of sales, the problem usually isn't the platform — it's the targeting, the creative, or the funnel behind the click. We manage Meta Ads for Malaysian SMEs and e-commerce brands end-to-end, tied to actual revenue, not vanity metrics.", "如果你的 Facebook 和 Instagram 广告只换来 Like 和 Reach，却没有生意，问题通常不在平台，而在受众、广告创意，或点击之后的流程。我们为马来西亚中小企业和电商品牌代投和管理 Meta 广告，看的是实际营业额，不是好看的数字。")}
@@ -39,7 +39,7 @@ const FacebookAdsPage = () => {
 
       <section className="section-padding px-6 md:px-8 border-t border-outline-variant/10 bg-surface-container/20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-black mb-4 text-center">{t("What's Included", "服务内容")}</h2>
+          <h2 className="text-2xl md:text-3xl font-heading font-black mb-4 text-center">{t("What's Included in Our Facebook & Instagram Ads Management", "Facebook 与 Instagram 广告代投包括什么")}</h2>
           <p className="text-on-surface-variant text-sm md:text-base text-center max-w-2xl mx-auto mb-10 font-medium">
             {t("Every engagement is scoped to your business and goals — here's what a typical Meta Ads engagement covers:", "每个项目都会按你的生意和目标来安排，一般包括：")}
           </p>

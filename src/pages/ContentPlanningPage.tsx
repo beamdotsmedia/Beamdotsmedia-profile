@@ -24,7 +24,7 @@ const ContentPlanningPage = () => {
             {t("Service · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Content Planning <span className="gold-gradient italic">& Strategy</span></>, <>内容策划<span className="gold-gradient italic">与策略</span></>)}
+            {t(<>Content Planning Services <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">内容策划服务</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             {t("Random posting doesn't build a brand — it burns time and budget. We plan content calendars built around what your audience actually engages with and what your sales funnel actually needs, so every post, video, and ad has a job to do.", "想到什么发什么，建立不了品牌，只会浪费时间和钱。我们会根据受众真正感兴趣的内容，以及你的销售流程需要什么来规划，让每个贴文、视频和广告都发得有目的。")}
@@ -34,7 +34,7 @@ const ContentPlanningPage = () => {
 
       <section className="section-padding px-6 md:px-8 border-t border-outline-variant/10 bg-surface-container/20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-black mb-4 text-center">{t("What's Included", "服务内容")}</h2>
+          <h2 className="text-2xl md:text-3xl font-heading font-black mb-4 text-center">{t("What's Included in Our Content Planning", "内容策划包括什么")}</h2>
           <p className="text-on-surface-variant text-sm md:text-base text-center max-w-2xl mx-auto mb-10 font-medium">
             {t("Every engagement is scoped to your business and goals — here's what a typical content planning engagement covers:", "每个项目都会按你的生意和目标来安排，一般包括：")}
           </p>
@@ -74,7 +74,7 @@ const ContentPlanningPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <h2 className="text-2xl md:text-3xl font-heading font-black mb-6">{t("Where It Feeds Into", "可以搭配哪些服务")}</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-black mb-6">{t("How Content Planning Supports Your Other Marketing", "内容策划如何配合其他服务")}</h2>
             <p className="text-on-surface-variant leading-relaxed font-medium">
               {t(<>A solid content plan is the foundation for our{' '}
               <Link to="/services/video-production" className="text-primary font-bold hover:underline">Video Production</Link>,{' '}

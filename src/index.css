@@ -62,13 +62,13 @@ html[lang^="zh"] .uppercase {
   text-transform: none;
 }
 
-html[lang^="zh"] :is(h1, h2, h3) {
+html[lang^="zh"] :is(h1, h2, h3, .display-heading) {
   line-height: 1.35;
   letter-spacing: 0;
   text-wrap: balance;
 }
 
-html[lang^="zh"] :is(h1, h2) {
+html[lang^="zh"] :is(h1, h2, .display-heading) {
   font-weight: 800;
 }
 

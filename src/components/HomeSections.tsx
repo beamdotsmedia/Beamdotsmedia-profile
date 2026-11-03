@@ -57,16 +57,16 @@ export const Hero = () => {
           initial={false}
           animate={{ opacity: 1, x: 0 }}
         >
-          <div className="text-primary font-black uppercase tracking-[0.3em] text-[0.65rem] mb-6 text-center lg:text-left">
-            {t("Full-Service Growth Marketing Agency · Petaling Jaya, Malaysia", "马来西亚一站式数码营销公司 · 八打灵再也")}
-          </div>
+          <h1 className="text-primary font-black uppercase tracking-[0.3em] text-[0.65rem] mb-6 text-center lg:text-left">
+            {t("Digital Marketing Agency in Malaysia · Petaling Jaya", "马来西亚一站式数码营销公司 · 八打灵再也")}
+          </h1>
 
-          <h1 className="text-4xl md:text-6xl lg:text-[4.25rem] font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
+          <p className="display-heading text-4xl md:text-6xl lg:text-[4.25rem] font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
             {t("Your Business Doesn't Need More Traffic —", "你缺的不是流量，")}
             <span className="gold-gradient italic block mt-2 py-1">
               {t("It Needs More Sales.", "而是买单的客户。")}
             </span>
-          </h1>
+          </p>
 
           <p className="text-base md:text-xl text-on-surface-variant max-w-xl lg:max-w-none mx-auto lg:mx-0 leading-relaxed mb-10">
             {t("BeamDots Media is a full-service growth marketing agency based in Petaling Jaya, Selangor — helping Malaysian SMEs turn content, ads, and websites into consistent leads and sales, not just impressions.", "BeamDots Media 是一家位于雪兰莪八打灵再也的一站式数码营销公司。我们帮马来西亚中小企业把内容、广告和网站变成稳定的询问和生意，而不是只有曝光。")}
@@ -311,9 +311,9 @@ export const Expertise = () => {
             {t("Core Competencies", "核心服务")}
           </span>
           <h2 className="text-4xl md:text-6xl font-heading font-black tracking-normal leading-[1.3] flex flex-wrap items-center gap-x-6 gap-y-4">
-            {t("Full-Service", "一站式")}{" "}
+            {t("Our", "一站式")}{" "}
             <span className="italic gold-gradient inline-block px-2 py-2">
-              {t("Growth Marketing", "数码营销")}
+              {t("Digital Marketing Services", "数码营销服务")}
             </span>
           </h2>
           <div className="h-1.5 w-40 gold-bg-gradient mt-8 rounded-full"></div>
@@ -418,7 +418,7 @@ export const Portfolio = () => {
             {t("The Proof", "真实案例")}
           </span>
           <h2 className="text-4xl md:text-6xl font-heading font-black tracking-tight italic gold-gradient">
-            {t("Impactful Wins", "看得见的成绩")}
+            {t("Client Results & Case Studies", "客户成绩与案例")}
           </h2>
         </div>
 

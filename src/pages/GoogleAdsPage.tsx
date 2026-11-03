@@ -28,7 +28,7 @@ const GoogleAdsPage = () => {
             {t("Service · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Google Ads <span className="gold-gradient italic">/ PPC Management</span></>, <>Google 广告代投<span className="gold-gradient italic"> / PPC</span></>)}
+            {t(<>Google Ads Management <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚 <span className="gold-gradient italic">Google 广告代投</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             {t("Search ads reach people already looking for what you sell — which means a poorly managed Google Ads account is one of the most expensive mistakes an SME can make. We build and manage PPC campaigns focused on capturing that high-intent traffic and converting it into calls, leads, and in-store visits, not just clicks.", "会点搜索广告的，都是已经在找你产品的人。所以 Google 广告没管好，是中小企业最贵的错误之一。我们帮你代投和管理 Google 广告（PPC），抓住这些有需求的客户，把他们变成来电、询问和到店客人，而不只是点击。")}
@@ -38,7 +38,7 @@ const GoogleAdsPage = () => {
 
       <section className="section-padding px-6 md:px-8 border-t border-outline-variant/10 bg-surface-container/20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-black mb-4 text-center">{t("What's Included", "服务内容")}</h2>
+          <h2 className="text-2xl md:text-3xl font-heading font-black mb-4 text-center">{t("What's Included in Our Google Ads Management", "Google 广告代投包括什么")}</h2>
           <p className="text-on-surface-variant text-sm md:text-base text-center max-w-2xl mx-auto mb-10 font-medium">
             {t("Every engagement is scoped to your business and goals — here's what a typical Google Ads engagement covers:", "每个项目都会按你的生意和目标来安排，一般包括：")}
           </p>
