@@ -27,7 +27,7 @@ const XhsInfluencerPage = () => {
             {t(<>XHS Influencer <span className="gold-gradient italic">Marketing</span></>, <>小红书网红<span className="gold-gradient italic">营销</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-            {t("Xiaohongshu (小红书, XHS), internationally branded as RedNote, has become one of the fastest-growing platforms for reaching Malaysia's Chinese-speaking, beauty, lifestyle, and F&B audiences — but most brands don't know how to work it. We plan and manage XHS influencer and KOC campaigns that turn genuine recommendations into real bookings and sales.", "小红书（RedNote）已成为接触马来西亚华人，以及美容、生活和餐饮消费者增长最快的平台之一，但很多品牌还不知道怎么做。我们帮你策划和管理网红与 KOC 合作，让真实推荐带来实际的预约和生意。")}
+            {t("Xiaohongshu (小红书, XHS), internationally branded as RedNote, has become one of the fastest-growing platforms for reaching Malaysia's Chinese-speaking, beauty, lifestyle, and F&B audiences — but most brands don't know how to work it. We plan and manage XHS influencer and KOC campaigns that turn genuine recommendations into real bookings and sales.", "小红书（RedNote）已成为接触马来西亚华人，以及美容、生活和餐饮消费者增长最快的平台之一，但很多品牌还不知道怎么做。我们帮你做小红书营销，策划和管理网红与 KOC 合作，让真实推荐带来实际的预约和生意。")}
           </p>
         </div>
       </section>

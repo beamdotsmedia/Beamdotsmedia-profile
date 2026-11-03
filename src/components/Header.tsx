@@ -19,8 +19,8 @@ const getServiceGroups = (t: Translate) => [
   {
     heading: t("Ads & Web", "广告与网站"),
     links: [
-      { to: "/services/facebook-instagram-ads", label: t("Meta Ads Management", "Meta 广告投放") },
-      { to: "/services/google-ads", label: t("Google Ads Management", "Google 广告投放") },
+      { to: "/services/facebook-instagram-ads", label: t("Meta Ads Management", "Meta 广告代投") },
+      { to: "/services/google-ads", label: t("Google Ads Management", "Google 广告代投") },
       { to: "/services/website-creation", label: t("Website Creation & Design", "网站设计与制作") },
       { to: "/services/funnel-optimization", label: t("Sales Funnel Optimization", "销售漏斗优化") },
     ],
@@ -57,7 +57,7 @@ const Header = () => {
           className="flex-shrink-0 group relative"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <img src={logoSrc} alt={t("BeamDots Media - Growth Marketing Agency Petaling Jaya", "BeamDots Media - 八打灵再也增长营销公司")} className="h-10 w-auto object-contain brightness-110 transition-transform hover:scale-105 active:scale-95" />
+          <img src={logoSrc} alt={t("BeamDots Media - Growth Marketing Agency Petaling Jaya", "BeamDots Media - 八打灵再也数码营销公司")} className="h-10 w-auto object-contain brightness-110 transition-transform hover:scale-105 active:scale-95" />
         </Link>
         <div className="hidden md:flex items-center gap-10">
           <ul className="flex items-center gap-8 font-sans uppercase tracking-[0.1em] font-bold text-xs text-on-surface-variant">

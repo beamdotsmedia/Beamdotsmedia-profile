@@ -27,7 +27,7 @@ const SocialMediaManagementPage = () => {
             {t(<>Social Media <span className="gold-gradient italic">Management</span></>, <>社交媒体<span className="gold-gradient italic">管理</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-            {t("Posting consistently isn't the same as growing. We manage day-to-day content posting, community engagement, and platform growth so your social presence actively supports sales instead of sitting idle between ad campaigns.", "天天发帖不等于生意会增长。我们负责日常发布、互动和账号增长，让你的社交媒体真正帮到生意，而不是没打广告就冷下来。")}
+            {t("Posting consistently isn't the same as growing. We manage day-to-day content posting, community engagement, and platform growth so your social presence actively supports sales instead of sitting idle between ad campaigns.", "天天发帖不等于生意会增长。我们帮你代管日常发布、互动和账号增长，让你的社交媒体真正帮到生意，而不是没打广告就冷下来。")}
           </p>
         </div>
       </section>

@@ -22,17 +22,17 @@ const FacebookAdsPage = () => {
 
   return (
     <>
-      <Breadcrumbs items={[{ label: t("Home", "首页"), to: "/" }, { label: t("Meta Ads Management", "Meta 广告投放") }]} />
+      <Breadcrumbs items={[{ label: t("Home", "首页"), to: "/" }, { label: t("Meta Ads Management", "Meta 广告代投") }]} />
       <section className="pb-16 md:pb-20 px-6 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="text-primary font-black uppercase tracking-[0.3em] text-[0.65rem] mb-6">
-            {t("Service · Facebook & Instagram Ads · Petaling Jaya, Malaysia", "服务 · Facebook 与 Instagram 广告 · 马来西亚八打灵再也")}
+            {t("Service · Facebook & Instagram Ads · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Meta Ads Management <span className="gold-gradient italic">(Sales Focused)</span></>, <>Meta 广告投放<span className="gold-gradient italic">（只看销售成绩）</span></>)}
+            {t(<>Meta Ads Management <span className="gold-gradient italic">(Sales Focused)</span></>, <>Facebook 与 Instagram <span className="inline-block">广告代投</span><span className="gold-gradient italic">（只看销售成绩）</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-            {t("If your Facebook and Instagram Ads are burning budget on likes and reach instead of sales, the problem usually isn't the platform — it's the targeting, the creative, or the funnel behind the click. We manage Meta Ads for Malaysian SMEs and e-commerce brands end-to-end, tied to actual revenue, not vanity metrics.", "如果你的 Facebook 和 Instagram 广告只换来 Like 和 Reach，却没有生意，问题通常不在平台，而在受众、广告创意，或点击之后的流程。我们为马来西亚中小企业和电商品牌全程管理 Meta 广告，看的是实际营业额，不是好看的数字。")}
+            {t("If your Facebook and Instagram Ads are burning budget on likes and reach instead of sales, the problem usually isn't the platform — it's the targeting, the creative, or the funnel behind the click. We manage Meta Ads for Malaysian SMEs and e-commerce brands end-to-end, tied to actual revenue, not vanity metrics.", "如果你的 Facebook 和 Instagram 广告只换来 Like 和 Reach，却没有生意，问题通常不在平台，而在受众、广告创意，或点击之后的流程。我们为马来西亚中小企业和电商品牌代投和管理 Meta 广告，看的是实际营业额，不是好看的数字。")}
           </p>
         </div>
       </section>

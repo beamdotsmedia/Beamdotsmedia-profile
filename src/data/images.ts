@@ -1,4 +1,4 @@
-import moneyImg from '../assets/images/money_throwing_sea_1777360203132.png';
+import moneyImg from '../assets/images/money_throwing_sea_1777360203132.jpg';
 
 export const IMAGES = {
   logo: "/logo.jpg",

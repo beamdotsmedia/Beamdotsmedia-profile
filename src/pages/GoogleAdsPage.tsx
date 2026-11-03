@@ -21,17 +21,17 @@ const GoogleAdsPage = () => {
 
   return (
     <>
-      <Breadcrumbs items={[{ label: t("Home", "首页"), to: "/" }, { label: t("Google Ads Management", "Google 广告投放") }]} />
+      <Breadcrumbs items={[{ label: t("Home", "首页"), to: "/" }, { label: t("Google Ads Management", "Google 广告代投") }]} />
       <section className="pb-16 md:pb-20 px-6 md:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="text-primary font-black uppercase tracking-[0.3em] text-[0.65rem] mb-6">
             {t("Service · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Google Ads <span className="gold-gradient italic">/ PPC Management</span></>, <>Google 广告<span className="gold-gradient italic"> / PPC 投放</span></>)}
+            {t(<>Google Ads <span className="gold-gradient italic">/ PPC Management</span></>, <>Google 广告代投<span className="gold-gradient italic"> / PPC</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-            {t("Search ads reach people already looking for what you sell — which means a poorly managed Google Ads account is one of the most expensive mistakes an SME can make. We build and manage PPC campaigns focused on capturing that high-intent traffic and converting it into calls, leads, and in-store visits, not just clicks.", "会点搜索广告的，都是已经在找你产品的人。所以 Google 广告没管好，是中小企业最贵的错误之一。我们帮你建立和管理 PPC 广告，抓住这些有需求的客户，把他们变成来电、询问和到店客人，而不只是点击。")}
+            {t("Search ads reach people already looking for what you sell — which means a poorly managed Google Ads account is one of the most expensive mistakes an SME can make. We build and manage PPC campaigns focused on capturing that high-intent traffic and converting it into calls, leads, and in-store visits, not just clicks.", "会点搜索广告的，都是已经在找你产品的人。所以 Google 广告没管好，是中小企业最贵的错误之一。我们帮你代投和管理 Google 广告（PPC），抓住这些有需求的客户，把他们变成来电、询问和到店客人，而不只是点击。")}
           </p>
         </div>
       </section>

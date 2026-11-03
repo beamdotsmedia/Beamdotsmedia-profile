@@ -26,7 +26,7 @@ const ServiceAreasPage = () => {
             {t(<>Our <span className="gold-gradient italic">Service Areas</span></>, <>我们的<span className="gold-gradient italic">服务范围</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-            {t("Our founder and team are based in Petaling Jaya, Selangor — that's simply where we sit, not where our work stops. Our main focus is Malaysian SMEs and e-commerce brands nationwide, and because content, social media, ads, and web work are all delivered remotely, we take on clients worldwide too.", "我们的创办人和团队在雪兰莪八打灵再也，但服务不限于这里。我们主要服务全马各地的中小企业和电商品牌；由于内容、社交媒体、广告和网站都能远程完成，海外客户也一样可以合作。")}
+            {t("Our founder and team are based in Petaling Jaya, Selangor — that's simply where we sit, not where our work stops. Our main focus is Malaysian SMEs and e-commerce brands nationwide, and because content, social media, ads, and web work are all delivered remotely, we take on clients worldwide too.", "我们的创办人和团队在雪兰莪八打灵再也，但服务不限于这里。我们的数码营销服务主要面向全马各地的中小企业和电商品牌；由于内容、社交媒体、广告和网站都能远程完成，海外客户也一样可以合作。")}
           </p>
         </div>
       </section>

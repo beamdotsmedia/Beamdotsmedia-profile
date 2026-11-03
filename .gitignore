@@ -9,5 +9,6 @@ coverage/
 
 # SEO data output
 data/
+!src/data/
 
 __pycache__/

@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..900;1,300..900&family=Outfit:ital,wght@0,600..900;1,600..900&family=Noto+Sans+SC:wght@300..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
-  --font-heading: "Outfit", "Inter", "Noto Sans SC", sans-serif;
+  --font-sans: "Inter", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Outfit", "Inter", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
   
   --color-surface: #111318;
   --color-surface-container: #1e2024;

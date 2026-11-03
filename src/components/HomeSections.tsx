@@ -26,14 +26,14 @@ export const Hero = () => {
   const HeroImage = ({ className }: { className?: string }) => (
     <motion.div
       className={className}
-      initial={{ opacity: 0, scale: 0.95 }}
+      initial={false}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1, delay: 0.2 }}
     >
       <div className="relative w-full aspect-square md:aspect-[4/5] rounded-xl overflow-hidden glass-card gold-glow p-3 group">
         <div className="absolute inset-0 bg-gradient-to-t from-surface/40 to-transparent z-10"></div>
         <img
           src={src}
+          fetchPriority="high"
           alt={t("BeamDots Media growth marketing strategist in Petaling Jaya", "BeamDots Media 增长营销策略师，八打灵再也")}
           onError={(e) => {
             const target = e.target as HTMLImageElement;
@@ -54,12 +54,11 @@ export const Hero = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center w-full">
         <motion.div
           className="lg:col-span-7 z-10 order-1 text-center lg:text-left"
-          initial={{ opacity: 0, x: -30 }}
+          initial={false}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="text-primary font-black uppercase tracking-[0.3em] text-[0.65rem] mb-6 text-center lg:text-left">
-            {t("Full-Service Growth Marketing Agency · Petaling Jaya, Malaysia", "马来西亚一站式增长营销公司 · 八打灵再也")}
+            {t("Full-Service Growth Marketing Agency · Petaling Jaya, Malaysia", "马来西亚一站式数码营销公司 · 八打灵再也")}
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-[4.25rem] font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
@@ -70,7 +69,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-base md:text-xl text-on-surface-variant max-w-xl lg:max-w-none mx-auto lg:mx-0 leading-relaxed mb-10">
-            {t("BeamDots Media is a full-service growth marketing agency based in Petaling Jaya, Selangor — helping Malaysian SMEs turn content, ads, and websites into consistent leads and sales, not just impressions.", "BeamDots Media 是一家位于雪兰莪八打灵再也的一站式增长营销公司。我们帮马来西亚中小企业把内容、广告和网站变成稳定的询问和生意，而不是只有曝光。")}
+            {t("BeamDots Media is a full-service growth marketing agency based in Petaling Jaya, Selangor — helping Malaysian SMEs turn content, ads, and websites into consistent leads and sales, not just impressions.", "BeamDots Media 是一家位于雪兰莪八打灵再也的一站式数码营销公司。我们帮马来西亚中小企业把内容、广告和网站变成稳定的询问和生意，而不是只有曝光。")}
           </p>
 
           <HeroImage className="lg:hidden mb-12 relative max-w-sm mx-auto" />
@@ -273,13 +272,13 @@ export const Expertise = () => {
       href: "/services/social-media-management",
     },
     {
-      title: t("Meta Ads Management", "Meta 广告投放"),
+      title: t("Meta Ads Management", "Meta 广告代投"),
       desc: t('Laser-targeted Facebook & Instagram campaigns that turn scrollers into ready-to-buy customers, not just "Likes."', "精准投放 Facebook 和 Instagram 广告，带来的是准备下单的客户，不只是一堆 Like。"),
       icon: <MousePointerClick className="w-8 h-8" />,
       href: "/services/facebook-instagram-ads",
     },
     {
-      title: t("Google Ads / PPC", "Google 广告 / PPC"),
+      title: t("Google Ads / PPC", "Google 广告代投"),
       desc: t("Capture high-intent search traffic and turn the click into a call, a lead, or a sale.", "在客户搜索的那一刻出现，把点击变成来电、询问和生意。"),
       icon: <Search className="w-8 h-8" />,
       href: "/services/google-ads",
@@ -314,7 +313,7 @@ export const Expertise = () => {
           <h2 className="text-4xl md:text-6xl font-heading font-black tracking-normal leading-[1.3] flex flex-wrap items-center gap-x-6 gap-y-4">
             {t("Full-Service", "一站式")}{" "}
             <span className="italic gold-gradient inline-block px-2 py-2">
-              {t("Growth Marketing", "增长营销")}
+              {t("Growth Marketing", "数码营销")}
             </span>
           </h2>
           <div className="h-1.5 w-40 gold-bg-gradient mt-8 rounded-full"></div>
@@ -457,7 +456,7 @@ export const FounderTeaser = () => {
         >
           <img
             src={src}
-            alt={t("Founder of BeamDots Media, growth marketing agency in Petaling Jaya", "BeamDots Media 创办人，八打灵再也增长营销公司")}
+            alt={t("Founder of BeamDots Media, growth marketing agency in Petaling Jaya", "BeamDots Media 创办人，八打灵再也数码营销公司")}
             loading="lazy"
             onError={(e) => {
               const target = e.target as HTMLImageElement;

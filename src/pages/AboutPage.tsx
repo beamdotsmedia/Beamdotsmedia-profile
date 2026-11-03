@@ -105,7 +105,7 @@ const AboutPage = () => {
               >
                 <img
                   src={src}
-                  alt={t("Founder of BeamDots Media, growth marketing agency in Petaling Jaya", "BeamDots Media 创办人，八打灵再也增长营销公司")}
+                  alt={t("Founder of BeamDots Media, growth marketing agency in Petaling Jaya", "BeamDots Media 创办人，八打灵再也数码营销公司")}
                   loading="lazy"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;

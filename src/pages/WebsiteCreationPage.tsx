@@ -27,7 +27,7 @@ const WebsiteCreationPage = () => {
             {t(<>Website Creation <span className="gold-gradient italic">& Design</span></>, <>网站设计<span className="gold-gradient italic">与制作</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-            {t("A slow, outdated, or confusing website is where a lot of ad spend quietly dies. We build fast, mobile-first websites and landing pages designed to convert the traffic your ads, content, and social channels already send you — not just look good in a portfolio.", "很多广告费，就浪费在又慢、又旧、又看不懂的网站上。我们制作打开快、手机好用的网站和 Landing Page，目的是把广告、内容和社交平台带来的流量变成客户，不只是好看。")}
+            {t("A slow, outdated, or confusing website is where a lot of ad spend quietly dies. We build fast, mobile-first websites and landing pages designed to convert the traffic your ads, content, and social channels already send you — not just look good in a portfolio.", "很多广告费，就浪费在又慢、又旧、又看不懂的网站上。我们提供网站设计和网页制作，做出打开快、手机好用的网站和 Landing Page，目的是把广告、内容和社交平台带来的流量变成客户，不只是好看。")}
           </p>
         </div>
       </section>

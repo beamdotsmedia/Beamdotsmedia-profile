@@ -80,7 +80,7 @@ const ContentPlanningPage = () => {
               <Link to="/services/video-production" className="text-primary font-bold hover:underline">Video Production</Link>,{' '}
               <Link to="/services/social-media-management" className="text-primary font-bold hover:underline">Social Media Management</Link>, and{' '}
               <Link to="/services/facebook-instagram-ads" className="text-primary font-bold hover:underline">Meta Ads Management</Link>{' '}
-              work — so creative direction stays consistent across every channel instead of getting rebuilt from scratch each time.</>, <>扎实的内容计划，是我们<Link to="/services/video-production" className="text-primary font-bold hover:underline">视频制作</Link>、<Link to="/services/social-media-management" className="text-primary font-bold hover:underline">社交媒体管理</Link>和 <Link to="/services/facebook-instagram-ads" className="text-primary font-bold hover:underline">Meta 广告投放</Link>的基础，让各渠道的创意方向保持一致，不必每次从头再来。</>)}
+              work — so creative direction stays consistent across every channel instead of getting rebuilt from scratch each time.</>, <>扎实的内容计划，是我们<Link to="/services/video-production" className="text-primary font-bold hover:underline">视频制作</Link>、<Link to="/services/social-media-management" className="text-primary font-bold hover:underline">社交媒体管理</Link>和 <Link to="/services/facebook-instagram-ads" className="text-primary font-bold hover:underline">Meta 广告代投</Link>的基础，让各渠道的创意方向保持一致，不必每次从头再来。</>)}
             </p>
           </motion.div>
         </div>

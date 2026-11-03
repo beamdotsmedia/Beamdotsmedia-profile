@@ -20,6 +20,8 @@ const { render, ROUTE_META, ZH_SERVICE_NAMES, HTML_LANG, LOCALES, localePath } =
 const baseTemplate = fs.readFileSync(templatePath, 'utf-8');
 const { title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION } = ROUTE_META.en['/'];
 
+const OG_LOCALE = { en: 'en_MY', zh: 'zh_MY' };
+
 const hreflangTags = (routePath) => {
   const zhUrl = `${SITE_URL}${localePath(routePath, 'zh')}`;
   const enUrl = `${SITE_URL}${routePath}`;
@@ -57,7 +59,8 @@ for (const locale of LOCALES) {
     // prefix inside unrelated absolute URLs like ".../logo.jpg", corrupting them.
     const defaultUrlAsFullValue = new RegExp(`${DEFAULT_URL.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?=")`, 'g');
     html = html.replace(defaultUrlAsFullValue, `${SITE_URL}${pagePath}`);
-    html = html.replace('</head>', `  ${hreflangTags(routePath)}\n  </head>`);
+    const ogLocaleTags = LOCALES.map((l) => `<meta property="og:locale${l === locale ? '' : ':alternate'}" content="${OG_LOCALE[l]}" />`).join('\n    ');
+    html = html.replace('</head>', `  ${hreflangTags(routePath)}\n    ${ogLocaleTags}\n  </head>`);
     html = html.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
 
     const outDir = path.join(root, 'dist', pagePath);
