@@ -1,5 +1,3 @@
-import moneyImg from '../assets/images/money_throwing_sea_1777360203132.jpg';
-
 export const IMAGES = {
   logo: "/logo.jpg",
   heroPlaceholder: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
@@ -15,5 +13,5 @@ export const IMAGES = {
   step2: "https://images.unsplash.com/photo-1543269664-76bc3997d9ea?q=80&w=2070&auto=format&fit=crop",
   step3: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
   step4: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-  burningMoney: moneyImg
+  burningMoney: "/images/money.jpg"
 };
