@@ -1,6 +1,7 @@
+import { Link as RouterLink } from 'react-router';
 import Link from './LocaleLink';
 import { ChevronUp } from 'lucide-react';
-import { useT, type Translate } from '../i18n';
+import { HTML_LANG, localePath, useLocale, useT, type Translate } from '../i18n';
 
 const getFooterLinks = (t: Translate) => [
   { to: "/services/content-planning", label: t("Content Planning", "内容策划") },
@@ -18,6 +19,10 @@ const getFooterLinks = (t: Translate) => [
 
 const Footer = () => {
   const t = useT();
+  // Cross-link every page to every page in the other language (labelled in that
+  // language) so the zh pages inherit internal links from the indexed EN pages.
+  const otherLocale = useLocale() === 'zh' ? 'en' : 'zh';
+  const otherLinks = getFooterLinks((en, zh) => (otherLocale === 'zh' ? zh : en));
   return (
     <footer className="bg-surface-container-lowest w-full py-20 px-6 md:px-8 border-t border-outline-variant/10">
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
@@ -48,6 +53,22 @@ const Footer = () => {
             </button>
           </div>
         </div>
+        <nav
+          aria-label={otherLocale === 'zh' ? '中文版' : 'English version'}
+          lang={HTML_LANG[otherLocale]}
+          className="flex flex-col md:flex-row items-center md:items-baseline gap-3 md:gap-6 pt-8 border-t border-outline-variant/10"
+        >
+          <RouterLink to={localePath('/', otherLocale)} hrefLang={HTML_LANG[otherLocale]} className="shrink-0 text-primary font-bold text-xs tracking-[0.1em] hover:opacity-80 transition-opacity">
+            {otherLocale === 'zh' ? '中文版' : 'ENGLISH'}
+          </RouterLink>
+          <ul className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-xs text-on-surface-variant/70">
+            {otherLinks.map((link) => (
+              <li key={link.to}>
+                <RouterLink to={localePath(link.to, otherLocale)} hrefLang={HTML_LANG[otherLocale]} className="hover:text-primary transition-colors">{link.label}</RouterLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </footer>
   );
