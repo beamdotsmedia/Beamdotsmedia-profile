@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://beamdotsmedia.com/services/facebook-instagram-ads</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -98,7 +98,7 @@
   </url>
   <url>
     <loc>https://beamdotsmedia.com/zh/services/facebook-instagram-ads</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -141,6 +141,42 @@
   <url>
     <loc>https://beamdotsmedia.com/zh/service-areas</loc>
     <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+<url>
+    <loc>https://beamdotsmedia.com/guides</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>https://beamdotsmedia.com/guides/what-is-roas</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+<url>
+    <loc>https://beamdotsmedia.com/guides/boost-post-vs-facebook-ads</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+<url>
+    <loc>https://beamdotsmedia.com/zh/guides</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>https://beamdotsmedia.com/zh/guides/what-is-roas</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+<url>
+    <loc>https://beamdotsmedia.com/zh/guides/boost-post-vs-facebook-ads</loc>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

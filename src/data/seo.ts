@@ -40,6 +40,18 @@ export const ROUTE_META: Record<Locale, Record<string, RouteMeta>> = {
       title: 'Sales Funnel & Conversion Optimization Malaysia | BeamDots',
       description: "Sales funnel and conversion optimization for Malaysian SMEs: full funnel audits, landing page CRO and checkout fixes that turn existing traffic into revenue.",
     },
+    '/guides': {
+      title: 'Marketing Guides for Malaysian SMEs | BeamDots Media',
+      description: "Plain-language marketing guides for Malaysian SMEs on Facebook and Instagram ads, ROAS and more, with ringgit examples from a digital marketing agency in PJ.",
+    },
+    '/guides/what-is-roas': {
+      title: 'What Is ROAS? Meaning, Formula & Calculator | BeamDots',
+      description: "What does ROAS mean? Learn the ROAS formula, how to work out your break-even ROAS, and use our free calculator, with ringgit examples for Malaysian SMEs.",
+    },
+    '/guides/boost-post-vs-facebook-ads': {
+      title: 'Boost Post vs Facebook Ads: Which Brings Sales? | BeamDots',
+      description: "Boost post vs Facebook ads in Ads Manager: what each does, a side-by-side comparison, and which one Malaysian businesses should use when they want sales.",
+    },
     '/case-studies': {
       title: 'Case Studies | BeamDots Media',
       description: "Real client results from BeamDots Media across beauty, F&B e-commerce, furniture, and interior design — Meta Ads, Google Ads, and funnel case studies.",
@@ -89,6 +101,18 @@ export const ROUTE_META: Record<Locale, Record<string, RouteMeta>> = {
     '/services/funnel-optimization': {
       title: '马来西亚销售漏斗优化 | BeamDots Media',
       description: '帮马来西亚中小企业优化销售漏斗：检查整个流程、改善 Landing Page 和结账流程，让现有流量带来更多生意。',
+    },
+    '/guides': {
+      title: '马来西亚中小企业营销指南 | BeamDots Media',
+      description: '给马来西亚中小企业的营销指南，用简单的话讲 Facebook 和 Instagram 广告、ROAS 等常见问题，配上令吉例子。',
+    },
+    '/guides/what-is-roas': {
+      title: 'ROAS 是什么？意思、公式和计算器 | BeamDots Media',
+      description: 'ROAS 是什么意思？了解 ROAS 公式、怎样算出保本 ROAS，并用免费计算器试算，全部用令吉例子讲给马来西亚商家。',
+    },
+    '/guides/boost-post-vs-facebook-ads': {
+      title: 'Boost Post 还是 Facebook 广告？哪个带来生意 | BeamDots',
+      description: 'Boost 贴文和在 Ads Manager 跑 Facebook 广告有什么不同？并排比较两者，告诉你想要生意时该用哪个。',
     },
     '/case-studies': {
       title: '马来西亚数码营销客户案例 | BeamDots Media',

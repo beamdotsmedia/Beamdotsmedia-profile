@@ -29,6 +29,7 @@ const getServiceGroups = (t: Translate) => [
 
 const getNavLinks = (t: Translate) => [
   { to: "/case-studies", label: t("Case Studies", "客户案例") },
+  { to: "/guides", label: t("Guides", "营销指南") },
   { to: "/about", label: t("About", "关于我们") },
   { to: "/service-areas", label: t("Service Areas", "服务范围") },
 ];

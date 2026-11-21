@@ -13,6 +13,7 @@ const getFooterLinks = (t: Translate) => [
   { to: "/services/website-creation", label: t("Website Creation & Design", "网站设计与制作") },
   { to: "/services/funnel-optimization", label: t("Sales Funnel Optimization", "销售漏斗优化") },
   { to: "/case-studies", label: t("Case Studies", "客户案例") },
+  { to: "/guides", label: t("Guides", "营销指南") },
   { to: "/about", label: t("About", "关于我们") },
   { to: "/service-areas", label: t("Service Areas", "服务范围") },
 ];

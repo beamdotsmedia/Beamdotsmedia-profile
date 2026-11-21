@@ -18,6 +18,9 @@ import FunnelOptimizationPage from './pages/FunnelOptimizationPage';
 import CaseStudiesPage from './pages/CaseStudiesPage';
 import AboutPage from './pages/AboutPage';
 import ServiceAreasPage from './pages/ServiceAreasPage';
+import GuidesHubPage from './pages/guides/GuidesHubPage';
+import WhatIsRoasPage from './pages/guides/WhatIsRoasPage';
+import BoostPostVsAdsPage from './pages/guides/BoostPostVsAdsPage';
 import { ROUTE_META } from './data/seo';
 import { HTML_LANG, LOCALES, localePath, stripLocale, useLocale } from './i18n';
 
@@ -34,6 +37,9 @@ const PAGES = [
   { path: '/case-studies', element: <CaseStudiesPage /> },
   { path: '/about', element: <AboutPage /> },
   { path: '/service-areas', element: <ServiceAreasPage /> },
+  { path: '/guides', element: <GuidesHubPage /> },
+  { path: '/guides/what-is-roas', element: <WhatIsRoasPage /> },
+  { path: '/guides/boost-post-vs-facebook-ads', element: <BoostPostVsAdsPage /> },
 ];
 
 const ScrollToTop = () => {

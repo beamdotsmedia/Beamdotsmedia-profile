@@ -5,8 +5,9 @@ Data pulled from DataForSEO (Google, Malaysia, location `2458`) and Google Searc
 
 Supersedes Phase 2 and Phase 4 of [SEO_OPTIMIZATION_PLAN.md](SEO_OPTIMIZATION_PLAN.md) (on-page and content expansion). The technical work in that file (prerender, sitemap, canonical, hreflang) is already done.
 
-> ### Current scope (decided 2026-11-21)
-> - **On hold:** `/guides/` pages (TOFU/MOFU layer), **all XHS work** (including the XHS service page), and individual case-study pages.
+> ### Current scope (decided 2026-11-21, updated same day)
+> - **Test cluster live: Meta ads.** Full funnel built: money page + `/guides` hub + 2 guides (EN + ZH). This is the test for whether guides are worth rolling out to other clusters. See [§4b](#4b-meta-ads-cluster-test).
+> - **On hold:** guides for **all other clusters**, **all XHS work** (including the XHS service page), and individual case-study pages.
 > - **In scope:** strengthening the **existing money pages** so they also cover the research-stage questions (cost, FAQ, who it's for), plus local (PJ) signals and expanding the Chinese versions.
 > - Sections 1.3 (clusters), 2 and 3.4–3.5 still describe the full guide-based funnel for when guides are revisited. **The active work is in [§4 Roadmap](#4-roadmap-current-scope).**
 
@@ -277,8 +278,8 @@ Money pages only. No guides, no XHS, no new case-study pages.
 | # | Work | Status |
 |---|---|---|
 | 1 | **Title / H1 / meta rewrites** (EN) for home + 7 services (not XHS), plus the About description. Titles 51–58 chars, H1 mirrors the title, descriptions 150–157 chars, "PJ" on home and Meta ads. `index.html` defaults updated to match (the prerender swaps per-page tags by matching the homepage strings). | ✅ Done 2026-11-21 |
-| 2 | **Top-5 SERP research** for each money page's primary keyword (SOP Phase 2), giving a content brief per page. | ⏳ Next |
-| 3 | **Upgrade the money pages** one at a time, in priority order. Each gets: a "How much does it cost in Malaysia?" H2, an FAQ (4–6 questions) with `FAQPage` schema, a "Who it's for" H2 linked to the existing `/case-studies` page, a local PJ/KL/Selangor line, related-service links, `Service` schema, and about 900–1,300 words (adjusted to the SERP median). | |
+| 2 | **Top-5 SERP research** for each money page's primary keyword (SOP Phase 2), giving a content brief per page, kept in [SEO_BRIEFS.md](SEO_BRIEFS.md). | 🔄 Meta ads done; Google Ads next |
+| 3 | 🔄 Meta ads done 2026-11-21 (EN 1,012 words / ZH 1,502 chars, Service + FAQPage schema). Target narrowed to "facebook ads agency malaysia/PJ" only; no published prices (quoted case by case). **Upgrade the money pages** one at a time, in priority order. Each gets: a "How much does it cost in Malaysia?" H2, an FAQ (4–6 questions) with `FAQPage` schema, a "Who it's for" H2 linked to the existing `/case-studies` page, a local PJ/KL/Selangor line, related-service links, `Service` schema, and about 900–1,300 words (adjusted to the SERP median). | |
 | 4 | **Expand the ZH twins** of each upgraded page to match the English content. | |
 | 5 | **Local pages:** rework `/service-areas` + home around PJ / KL / Selangor, linking to the top money pages with "[service] agency in PJ" anchors. | |
 | 6 | Review in GSC at **2, 6 and 12 weeks** (SOP Phase 4). Decide then whether guides are needed. | |
@@ -301,9 +302,45 @@ Money pages only. No guides, no XHS, no new case-study pages.
 
 ---
 
+## 4b. Meta ads cluster test
+
+Built 2026-11-21 to test whether TOFU/MOFU guides pull traffic into the money page.
+
+```
+ TOFU  /guides/what-is-roas                 "roas meaning / formula / calculator"  ~1,000/mo combined
+ MOFU  /guides/boost-post-vs-facebook-ads   "facebook boost post (vs ads)"         ~220/mo
+   │  (both link to the money page in the intro + a callout + "Related")
+ BOFU  /services/facebook-instagram-ads     "facebook ads agency malaysia / PJ"   GSC proven
+   ▲  money page links back down via a "Facebook Ads Guides" section
+ HUB   /guides                               (header + footer nav; within 1 click of home)
+```
+
+| Page | Primary keyword | Vol / KD | EN length | ZH | Schema | Status |
+|---|---|---|---|---|---|---|
+| `/services/facebook-instagram-ads` | facebook ads agency malaysia / PJ | GSC / – | 1,012 words | 1,502 chars | Service, FAQPage | ✅ Live on branch |
+| `/guides/what-is-roas` | roas meaning (+ formula, calculator, break-even) | 590+170+140+70+50 / 32 | 1,096 words + live ROAS / break-even calculator | 1,404 chars | Article, FAQPage | ✅ Built |
+| `/guides/boost-post-vs-facebook-ads` | facebook boost post / boost vs ads | 110+110 / 21 | 812 words + comparison table | 1,177 chars | Article, FAQPage | ✅ Built |
+| `/guides` | hub | – | listing | ✓ | Breadcrumb | ✅ Built |
+
+**SERP angle used:** the competitor pages read were US/AU/glossary pages in USD with no break-even ROAS formula, no calculator and no Malaysian context (WhatsApp sales, Shopee/Lazada, RM examples). Both guides lead with that.
+
+**How to judge the test (GSC, at 2 / 6 / 12 weeks after deploy):**
+- Guides indexed and getting impressions for ROAS / boost queries.
+- Internal clicks from the guides to `/services/facebook-instagram-ads` (Vercel Analytics: referrer path).
+- Any consultation that started from a guide page.
+- **Go / no-go for guides on other clusters at week 12.**
+
+**Fact-check pass (2026-11-21):** removed unconfirmed claims about BeamDots' process (tracking checks, "clients come to us with…", clients' break-even), corrected Boost-button wording (it offers a short list of goals, not only engagement; no Sales objective), and replaced F&B/furniture notes with the real case-study facts (Okiss = CRO, Tekni = Google & Meta).
+
+**Known site-wide issue (not caused by this work):** React hydration warning #418 on every page, including untouched ones like `/about`. React falls back to client rendering. Prerendered HTML (what Google reads) is unaffected. Worth fixing separately.
+
+---
+
 ## 5. Open items / needs from you
 
 - [ ] **Pricing ranges** you're happy to publish (Meta/Google ads management fee, website, social media package, video shoot). The "How much does it cost" sections depend on them; "from RM…" is enough.
 - [ ] **Case-study numbers** you're happy to quote on the service pages (ROAS, CPL, revenue lift).
 - [ ] Full GSC query export (Search Console → Performance → Export) every few weeks, to feed new long-tail keywords back into ideation.
-- [ ] *(Parked)* Guides `/guides/` vs `/blog/` naming, XHS work, case-study pages.
+- [ ] *(Parked)* XHS work, case-study pages, guides for clusters other than Meta ads.
+- [x] ~~Guides naming~~: went with `/guides/`.
+- [ ] Deploy the `seo/money-page-onpage` branch, then submit the new URLs in GSC (URL Inspection → Request indexing).
