@@ -24,7 +24,7 @@ const WebsiteCreationPage = () => {
             {t("Service · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Website Design <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">网站设计与制作</span></>)}
+            {t(<>Website Design Company <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">网站设计与制作</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             {t("A slow, outdated, or confusing website is where a lot of ad spend quietly dies. We build fast, mobile-first websites and landing pages designed to convert the traffic your ads, content, and social channels already send you — not just look good in a portfolio.", "很多广告费，就浪费在又慢、又旧、又看不懂的网站上。我们提供网站设计和网页制作，做出打开快、手机好用的网站和 Landing Page，目的是把广告、内容和社交平台带来的流量变成客户，不只是好看。")}

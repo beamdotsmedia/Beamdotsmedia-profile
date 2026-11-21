@@ -28,7 +28,7 @@ const FunnelOptimizationPage = () => {
             {t("Service · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Sales Funnel Optimization <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">销售漏斗优化</span></>)}
+            {t(<>Sales Funnel &amp; Conversion Optimization <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">销售漏斗优化</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             {t("Most businesses lose more revenue to a broken funnel than to bad ads. If your traffic looks healthy but sales don't match, the leak is usually somewhere between the ad click and the checkout — a slow landing page, a confusing offer, or a checkout flow that loses people at the last step. We audit that entire journey and fix what's actually costing you sales.", "很多生意流失的营业额，其实不是因为广告差，而是销售流程出了问题。如果流量看起来不错，生意却跟不上，漏洞通常就在点击广告和结账之间：Landing Page 太慢、优惠看不懂，或者付款流程太麻烦，客人走到最后一步就跑了。我们会检查整个流程，修好真正让你亏钱的地方。")}

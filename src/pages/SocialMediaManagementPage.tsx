@@ -24,7 +24,7 @@ const SocialMediaManagementPage = () => {
             {t("Service · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Social Media Management <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">社交媒体管理</span></>)}
+            {t(<>Social Media Management Services <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">社交媒体管理</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             {t("Posting consistently isn't the same as growing. We manage day-to-day content posting, community engagement, and platform growth so your social presence actively supports sales instead of sitting idle between ad campaigns.", "天天发帖不等于生意会增长。我们帮你代管日常发布、互动和账号增长，让你的社交媒体真正帮到生意，而不是没打广告就冷下来。")}

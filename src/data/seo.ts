@@ -5,40 +5,40 @@ export type RouteMeta = { title: string; description: string };
 export const ROUTE_META: Record<Locale, Record<string, RouteMeta>> = {
   en: {
     '/': {
-      title: 'BeamDots Media | Full-Service Growth Marketing Agency',
-      description: "Full-service growth marketing agency helping Malaysian SMEs turn content, social media, Meta & Google Ads, XHS marketing, and websites into sales.",
+      title: 'Digital Marketing Agency in Malaysia (PJ) | BeamDots Media',
+      description: "Digital marketing agency in Petaling Jaya helping Malaysian SMEs turn content, social media, Meta & Google Ads, XHS and websites into enquiries and sales.",
     },
     '/services/content-planning': {
-      title: 'Content Planning & Strategy | BeamDots Media',
-      description: "Content planning for Malaysian SMEs — monthly calendars mapped to your campaigns across Instagram, TikTok, and XHS, so every post has a job to do.",
+      title: 'Social Media Content Planning Services Malaysia | BeamDots',
+      description: "Social media content planning for Malaysian SMEs: monthly calendars across Instagram, TikTok and XHS, mapped to your campaigns so every post has a job to do.",
     },
     '/services/video-production': {
-      title: 'Video Production & Shooting | BeamDots Media',
-      description: "Video production and shooting for Malaysian SMEs — product shoots and ad-ready creative for Reels, TikTok, XHS, and Meta & Google Ads campaigns.",
+      title: 'Video Production Company in Malaysia | BeamDots Media',
+      description: "Video production company in Malaysia for SMEs: product shoots, testimonials and ad-ready creative for Reels, TikTok, XHS, and Meta & Google Ads campaigns.",
     },
     '/services/social-media-management': {
-      title: 'Social Media Management | BeamDots Media',
-      description: "Social media management for Malaysian SMEs — daily posting, community management, and profile optimization across Instagram, Facebook, and XHS.",
+      title: 'Social Media Management Services Malaysia | BeamDots',
+      description: "Social media management services for Malaysian SMEs: daily posting, comment and DM replies, and profile optimization across Instagram, Facebook and XHS.",
     },
     '/services/facebook-instagram-ads': {
-      title: 'Meta Ads Management (Sales Focused) | BeamDots Media',
-      description: "Meta Ads management for Malaysian SMEs — audience targeting, creative testing, and retargeting tied to ROAS, not reach. Up to 12x return on ad spend.",
+      title: 'Facebook & Instagram Ads Agency in PJ, Malaysia | BeamDots',
+      description: "Facebook & Instagram ads agency in Petaling Jaya for Malaysian SMEs. We plan, test and scale Meta campaigns around ROAS and sales, not likes. Up to 12x ROAS.",
     },
     '/services/google-ads': {
-      title: 'Google Ads / PPC Management | BeamDots Media',
-      description: "Google Ads / PPC management for Malaysian SMEs — keyword research, conversion tracking, and budget management built to turn traffic into sales.",
+      title: 'Google Ads (PPC) Agency in Malaysia | BeamDots Media',
+      description: "Google Ads (PPC) agency in Malaysia for SMEs: keyword research, conversion tracking and budget management that turn high-intent searches into enquiries.",
     },
     '/services/xhs-influencer-marketing': {
       title: 'XHS Influencer Marketing | BeamDots Media',
       description: "Xiaohongshu (XHS/RedNote) influencer and KOC marketing for Malaysian brands — creator sourcing, briefs, and performance tracking for beauty and F&B brands.",
     },
     '/services/website-creation': {
-      title: 'Website Creation & Design | BeamDots Media',
-      description: "Website creation and design for Malaysian SMEs — fast, mobile-first websites and landing pages built to convert the traffic you're already sending.",
+      title: 'Website Design Company in Malaysia | BeamDots Media',
+      description: "Website design company in Malaysia for SMEs: fast, mobile-first websites and landing pages built to convert the traffic your ads and social already send you.",
     },
     '/services/funnel-optimization': {
-      title: 'Sales Funnel Optimization | BeamDots Media',
-      description: "Sales funnel optimization for Malaysian SMEs — full funnel audits, landing page CRO, and checkout fixes that turn existing traffic into more revenue.",
+      title: 'Sales Funnel & Conversion Optimization Malaysia | BeamDots',
+      description: "Sales funnel and conversion optimization for Malaysian SMEs: full funnel audits, landing page CRO and checkout fixes that turn existing traffic into revenue.",
     },
     '/case-studies': {
       title: 'Case Studies | BeamDots Media',
@@ -46,7 +46,7 @@ export const ROUTE_META: Record<Locale, Record<string, RouteMeta>> = {
     },
     '/about': {
       title: 'About Us & Our Process | BeamDots Media',
-      description: "Meet the team behind BeamDots Media and the 4-step process we use to take a Malaysian SME from scattered marketing to a predictable sales engine.",
+      description: "Meet the team behind BeamDots Media and the 4-step process we use to take a Malaysian SME from scattered marketing to a predictable, measurable sales engine.",
     },
     '/service-areas': {
       title: 'Service Areas | BeamDots Media',

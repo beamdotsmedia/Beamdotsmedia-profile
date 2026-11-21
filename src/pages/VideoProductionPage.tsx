@@ -24,7 +24,7 @@ const VideoProductionPage = () => {
             {t("Service · Petaling Jaya, Malaysia", "服务 · 马来西亚八打灵再也")}
           </div>
           <h1 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-[1.1] mb-8 text-on-surface">
-            {t(<>Video Production <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">视频拍摄与制作</span></>)}
+            {t(<>Video Production Company <span className="gold-gradient italic whitespace-nowrap">in Malaysia</span></>, <>马来西亚<span className="gold-gradient italic">视频拍摄与制作</span></>)}
           </h1>
           <p className="text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             {t("Static images don't stop the scroll the way video does. We shoot and produce short-form and campaign video content — product shoots, testimonials, ad creatives, and social content — built to perform on the platforms your customers actually use.", "想让人滑手机时停下来，图片远远比不上视频。我们拍摄和制作短视频及广告视频，包括产品、顾客见证、广告和社交内容，专门针对你的客户常用的平台。")}
