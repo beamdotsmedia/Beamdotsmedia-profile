@@ -20,6 +20,7 @@ const PageCta = ({ heading, description }: { heading: string; description: strin
           </p>
 
           <a
+            data-lt-btn="page_cta_whatsapp"
             href="https://wa.me/60167731754"
             target="_blank"
             rel="noreferrer"

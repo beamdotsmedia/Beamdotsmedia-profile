@@ -79,6 +79,7 @@ export const Hero = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
             <a
+              data-lt-btn="home_hero_whatsapp"
               href="https://wa.me/60167731754"
               target="_blank"
               rel="noreferrer"
@@ -537,6 +538,7 @@ export const Contact = () => {
               {t("GET YOUR FREE BUSINESS CONSULTATION", "免费咨询，聊聊你的生意")}
             </div>
             <a
+              data-lt-btn="home_final_cta_whatsapp"
               href="https://wa.me/60167731754"
               target="_blank"
               rel="noreferrer"
